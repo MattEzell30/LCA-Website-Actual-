@@ -297,6 +297,105 @@
 }
 
 </style>
+
+<style id="spanish-mobile-hard-fix">
+@media (max-width: 700px){
+  html, body {
+    width:100% !important;
+    max-width:100% !important;
+    overflow-x:clip !important;
+    margin:0 !important;
+  }
+  body { position:relative; }
+  body > *, header, main, footer, section, .topbar, .nav, .hero, .dark-section, .cream {
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+  .topbar {
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    padding:.7rem 1rem !important;
+    gap:.3rem !important;
+  }
+  .topbar span, .topbar a {
+    max-width:100% !important;
+    overflow-wrap:anywhere !important;
+  }
+  .nav-inner {
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    padding:.65rem 1rem .8rem !important;
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:.65rem !important;
+  }
+  .brand {
+    width:100% !important;
+    min-width:0 !important;
+    justify-content:flex-start !important;
+  }
+  .brand span {
+    min-width:0 !important;
+    max-width:calc(100% - 64px) !important;
+    white-space:normal !important;
+    overflow-wrap:anywhere !important;
+  }
+  .nav-actions {
+    width:100% !important;
+    min-width:0 !important;
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+    gap:.5rem !important;
+  }
+  .nav-actions .btn, .nav-actions .btn.language {
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    padding:.7rem .25rem !important;
+    font-size:.64rem !important;
+    letter-spacing:.025em !important;
+    white-space:normal !important;
+    text-align:center !important;
+    line-height:1.2 !important;
+  }
+  .hero-wrap, .container, .split, .admissions, .section-head, .step-wrap, .guide-grid, .grid, .contact-grid {
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+  .hero-wrap {
+    padding:2rem 1rem 3rem !important;
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) !important;
+  }
+  .hero h1, h1, h2, h3, p {
+    max-width:100% !important;
+    overflow-wrap:anywhere !important;
+    word-break:normal !important;
+  }
+  .hero h1 {
+    font-size:clamp(2.25rem,11vw,3.25rem) !important;
+    line-height:1.02 !important;
+  }
+  section { padding-left:1rem !important; padding-right:1rem !important; }
+  .card, .panel, .contact-box, .content-card, .section-card, .section-head, .guide-step, .sidebar, .notice, .admissions {
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+  img, svg, iframe { max-width:100% !important; height:auto; }
+}
+@media (max-width: 390px){
+  .nav-actions { grid-template-columns:1fr !important; }
+  .nav-actions .btn, .nav-actions .btn.language { font-size:.7rem !important; }
+}
+</style>
 </head>
 <body>
 <div class="topbar">
